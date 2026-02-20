@@ -5,7 +5,7 @@
 
 :root {
     --color-black: #000000;
-    --color-gold: #33ccff;
+    --color-gold: #FC0386;
     --color-gold-dark: #b90034;
     --color-white: #ffffff;
     --color-gray-light: #f8f9fa;
@@ -1958,7 +1958,7 @@ body.page-id-events .page-header {
 }
 
 .cta-button {
-    background: #274DE9;
+    background: #FC0386; 
     color: var(--color-white);
     padding: 1rem 2rem;
     border: none;
@@ -2059,7 +2059,7 @@ body.page-id-events .page-header {
 }
 
 .event-image {
-    height: 250px;
+    height: 450px;
     background: linear-gradient(45deg, var(--color-black), var(--color-gold));
     position: relative;
     display: flex;
@@ -3091,7 +3091,7 @@ body.page-id-events .page-header {
 
 /* Footer */
 .footer {
-    background: #274DE9;
+    background: #FC0386;
     color: var(--color-black);
     padding: 3rem 0 1rem;
     text-align: center;
