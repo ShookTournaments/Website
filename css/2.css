@@ -41,7 +41,7 @@
     box-shadow: var(--shadow-medium);
     transition: all var(--transition-fast);
     position: relative;
-    cursor: pointer;
+    
     display: flex;
     flex-direction: column;
     height: 100%;
