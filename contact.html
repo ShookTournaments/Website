@@ -37,74 +37,30 @@
       <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 
 
-<script>
-jQuery(function($) {
-    var current = 0;
-    var slides = $('.hero-slide');
-    var total = slides.length;
-    setInterval(function() {
-        slides.eq(current).removeClass('active');
-        current = (current + 1) % total;
-        slides.eq(current).addClass('active');
-    }, 4000);
-});
-</script>
-
-
-
-<script src="https://static.elfsight.com/apps/instashow/stable/7ddd74df7ca4bbe49e6051e8181ec9ead18dee20/app/instashow.js" async="" charset="UTF-8"></script>
-
 
 
    </head>
    <body class="home wp-singular page-template page-template-template-home page-template-template-home-php page page-id-750 wp-embed-responsive wp-theme-shook-sports-theme home-page">
-      
-
-
-
       <header class="header transparent">
          <div class="nav-container">
             <a href="index.html" class="logo">
-            <img src="images/ShookLogo.png" alt="shook Tournaments" class="logo-svg">
+            <img src="images/ShookLogo.webp" alt="shook Tournaments" class="logo-svg">
             </a>
-            <nav class="main-navigation act">
-               <ul id="menu-shook-primary" class="nav-menu">
-                  <li id="menu-item-767" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-750 current_page_item menu-item-767"><a href="index.html" aria-current="page">Home</a></li>
-                  
-<li id="menu-item-767" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-750 current_page_item menu-item-767"><a href="https://shooktournaments.pixieset.com/" target="_blank" aria-current="page">Photos</a></li>
-
-
-                  <li id="menu-item-769" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-769"><a href="#events">Events</a></li>
-                  <li id="menu-item-770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-770"><a href="rules.html">Rules</a></li>
-                  <li id="menu-item-831" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-831"><a href="contest.html">Give-away Contest Rules</a></li>
-                  <li id="menu-item-768" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-768"><a href="contact.html">Contact</a></li>
-               </ul>
-            </nav>
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
-            <span> </span>
-            <span> </span>
-            <span> </span>
-            </button>
 
 
 <style type="text/css">
-   /* elfsight fix  */
-   .eapps-widget-toolbar{
-      display: none !important;
-   }
-
+@media (max-width: 660px) {
+                      .mobile-menu-toggle{
+                        /*display:none;*/
+                      }
+                   }
 
 </style>
 
 
+
 <script>
 jQuery(function($) {
-   /*Test
-   $(function() {
-    $('.mobile-menu-toggle').toggleClass('active');
-   
-});*/
     // Toggle menu open/close
     $('.mobile-menu-toggle').on('click', function() {
         $(this).toggleClass('active');
@@ -128,6 +84,37 @@ jQuery(function($) {
 </script>
 
 
+            <nav class="main-navigation">
+               <ul id="menu-shook-primary" class="nav-menu">
+                  <li id="menu-item-767" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-750 current_page_item menu-item-767"><a href="index.html" aria-current="page">Home</a></li>
+                  
+<li id="menu-item-767" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-750 current_page_item menu-item-767"><a href="https://shooktournaments.pixieset.com/" target="_blank" aria-current="page">Photos</a></li>
+
+
+                  <li id="menu-item-769" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-769"><a href="index.html#events">Events</a></li>
+                  <li id="menu-item-770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-770"><a href="rules.html">Rules</a></li>
+                  <li id="menu-item-831" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-831"><a href="contest.html">Give-away Contest Rules</a></li>
+
+                  <style type="text/css">
+                     
+                     #menu-item-768 a{
+                           color: #FC0386 !important;
+
+                     }
+                  </style>
+                  <li id="menu-item-768" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-768"><a href="#">Contact</a></li>
+               </ul>
+            </nav>
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+            <span> </span>
+            <span> </span>
+            <span> </span>
+            </button>
+
+
+
+
 
 
 
@@ -140,40 +127,7 @@ jQuery(function($) {
 
          </div>
       </header>
-
-
-
-
-
-      <!-- Hero Section -->
-      <section class="hero" id="home">
-         <!-- Hero Background Slideshow -->
-         <div class="hero-slideshow">
-            <div class="hero-slide active" style="background-image: url('images/r1.jpg');"></div>
-            <div class="hero-slide " style="background-image: url('images/r2.jpg');"></div>
-            <div class="hero-slide " style="background-image: url('images/r3.jpg');"></div>
-            <div class="hero-slide " style="background-image: url('images/r4.jpg');"></div>
-            <div class="hero-slide " style="background-image: url('images/r5.jpg');"></div>
-         </div>
-         <div class="hero-overlay"></div>
-         <div class="hero-content">
-            <div class="hero-logo">
-
-               <img src="images/ShookLogo.webp" alt="Shook Tournaments" class="hero-logo-svg">
-            </div>
-             <a href="https://www.zortssports.com/season/index?orgId=128851" target="_blank" class="cta-button">
-                  Register Now                       
-               </a>
-
-               <a href="#events" 
-                  class="cta-button"
-                  >
-                  View Events                       
-               </a>
-         </div>
-      </section>
-
-
+      
 
 
 <style>
@@ -183,6 +137,7 @@ jQuery(function($) {
    width: 100%;
    background-color: #444;
    padding:20px;
+   padding-top: 140px;
    color:white;
 }
 
@@ -205,261 +160,50 @@ jQuery(function($) {
 
 
 
-
-
-
-
-
-
-
-
-
-<style type="text/css">
-   a.uevents{
-      max-width: 30%;
-      overflow:none;
-   }
-
-</style>
-
-
-<section class="featured-events" id="events">
-         <div class="container">
-            <div class="section-header">
-               <h2>Events</h2>
-      
-            </div>
-            
-
-
-
-
-<div class="events-grid">
-               <div class="event-card">
-                  <div class="event-image" style="background-image: url('images/event1.jpg');">
-                     Upcoming                        
-                  </div>
-                  <div class="event-content">
-                     <span class="event-date">March 14-15, 2026</span>
-                     <h3 class="event-title">5v5 Flag Shook Tournament</h3>
-                     <p class="event-venue">Location TBA</p>
-                     <div class="event-actions">
-                        <a href="https://www.zortssports.com/season/index?orgId=128851" target="_blank" class="event-cta-btn interested-btn">Register Now!</a>
-                     </div>
-                  </div>
-               </div>
-               
-               <div class="event-card" >
-                  <div class="event-image" style="background-image: url('images/event5.jpg');">
-                     VCC                        
-                  </div>
-                  <div class="event-content">
-                     <span class="event-date">February 14-15, 2026</span>
-                     <h3 class="event-title">Valentines Classic Championship</h3>
-                     <!-- <p class="event-venue">Butler Highschool</p> -->
-                     <div class="event-actions">
-                        <a href="https://shooktournaments.pixieset.com/" target="_blank" class="event-cta-btn interested-btn">View Gallery!</a>
-                     </div>
-                  </div>
-
-               </div>
-               
-
-               <div class="event-card" >
-                  <div class="event-image" style="background-image: url('images/event3.jpg');">
-                     Shook Opener                      
-                  </div>
-                  <div class="event-content">
-                     <span class="event-date">January 31 - Febraury 1, 2026</span>
-                     <h3 class="event-title">Shook Opener</h3>
-                     <!--<p class="event-venue">Butler Highschool</p>-->
-                     <div class="event-actions">
-                        <a href="https://primeactionimage.zenfolio.com/p481921096" target="_blank" class="event-cta-btn interested-btn">View Gallery!</a>
-                     </div>
-                  </div>
-               
-</div>
-               <!--<div class="event-card" >
-                  <div class="event-image" style="background-image: url('images/event6.jpg');">
-                     HOUSTON                        
-                  </div>
-                  <div class="event-content">
-                     <span class="event-date">April 28-1, 2026 </span>
-                     <h3 class="event-title">Shook Tournament</h3>
-                     <p class="event-venue">Butler Highschool</p>
-                     <div class="event-actions">
-                        <a href="https://www.zortssports.com/season/index?orgId=128851" target="_blank" class="event-cta-btn interested-btn">View Gallery!</a>
-                     </div>
-                  </div>
-               </div>
-               
-
-               <div class="event-card" >
-                  <div class="event-image" style="background-image: url('images/event1.jpg');">
-                     HOUSTON                        
-                  </div>
-                  <div class="event-content">
-                     <span class="event-date">April 28-1, 2026</span>
-                     <h3 class="event-title">Shook Tournament</h3>
-                     <p class="event-venue">Butler Highschool</p>
-                     <div class="event-actions">
-                        <a href="https://www.zortssports.com/season/index?orgId=128851" target="_blank" class="event-cta-btn interested-btn">View Gallery!</a>
-                     </div>
-                  </div>
-
-               </div>-->
-
-
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-         </div>
-      </section>
-
-
-<!--
-<section class="featured-events" id="rankings">
-         <div class="container">
-            <div class="section-header">
-               <h2>Shook Rankings</h2>
-      Another social media account for rankings only
-
-            </div>
-            
-         </div>
-      </section>
-
--->
-<style>
-   .featured-events{
-      max-width: 100%;
-   }
-
-</style>
-
-
-
-
-      <section class="featured-events" id="social">
-         <div class="container">
-            <div class="section-header">
-               <h2>Rankings and More</h2>
-      
-
-
-
-
-
-<!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
-<script src="https://elfsightcdn.com/platform.js" async></script>
-<div class="elfsight-app-416dab01-e6e1-4d0a-b961-1c11da4a7140" data-elfsight-app-lazy></div>
-
-
-            </div>
-            
-         </div>
-      </section>
-      
-      
-<!--
-<section class="sponsors-section" id="events">
-         <div class="container">
-            <div class="sponsors-content">
-               <h2 class="sponsors-title">Events</h2>
-               <p class="cal">
-
-
-              <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FLos_Angeles&showPrint=0&showTabs=0&src=c2hvb2t0b3VybmFtZW50c0BnbWFpbC5jb20&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039be5&color=%230b8043" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe></p>
-               <div class="sponsors-grid">
-                  
-               </div>
-            </div>
-         </div>
-      </section>
--->
-
-
-
-
-
-
-
-
       <!-- CTA Section -->
       <section class="cta-section">
          <div class="container">
             <div class="cta-content">
-               <h2>Coaches Corner</h2>
+               <h2>Contact</h2>
                <p>Submit your team for Shook Tournaments</p>
                
-                  <a href="https://www.zortssports.com/season/index?orgId=128851" class="cta-button" target="_blank">
-                  Register Now                       
-               </a>
-               <a href="contact.html" 
-                  class="cta-button"
-                  >
-                  Questions                        
-               </a>
-               <a href="rules.html" 
-                  class="cta-button"
-                  >
-               Rule Book                       </a>
+               <style type="text/css">
+                  
+                  
+
+                  #this{
+                     z-index: 5;
+                  }
+                  #under{
+                     z-index: 1;
+                     margin-top: -450px;
+                     height:450px;
+                  }
+                  @media (max-width: 660px) {
+                      .mcWRN .RH5hzf:first-of-type {
+                          margin-top: 800px;
+                      }
+                      #this{
+                        max-width: 250px;
+                        height: 1226px;
+                      }
+                     
+                  }
+
+               </style>
+
+               <iframe id="this" src="https://docs.google.com/forms/d/e/1FAIpQLSfAEDvwkw8SIiVM3xoSW9EiZhdXeN94vsETVY3Qr7IRKCY_JA/viewform?embedded=true" width="640" height="1026" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+                  <h3 id="under">
+                     Thank you!
+
+                  </h3>
+               
             </div>
          </div>
       </section>
       
-      <style type="text/css">
-      
-         .sponsor-item img{
-            width: 300px;
-         }
-
-
-      </style>
-
-
-<section class="sponsors-section">
-         <div class="container">
-            <div class="sponsors-content">
-               <h2 class="sponsors-title">Partners</h2>
-               <p class="sponsors-subtitle">Partnering with our community</p>
-               <div class="sponsors-grid">
-                  <div class="sponsor-item">
-                     <a href="https://www.hendersonflag.com/" target="_blank"> <img src="images/partner3.png"></a>
-                  </div>
-                  
-
-
-                  <div class="sponsor-item">
-                     <a href="https://www.ebyirondesigns.com" target="_blank"> <img src="images/partner1.png"></a>
-                  </div>
-                  <div class="sponsor-item">
-                     <a href="https://vegassportsandapparel.com/" target="_blank"> <img src="images/partner2.png"></a>
-                  </div>
-                  
-                  <div class="sponsor-item">
-                     <a href="https://www.trophyfactorylv.com/" target="_blank"> <img src="images/partner4.png"></a>
-                  </div>
-                  <div class="sponsor-item">
-                     <a href="https://recruitvegas.com/" target="_blank"> <img src="images/partner5.png"></a>
-                  </div>
-                  <!--<div class="sponsor-item">
-                     <a href="#" target="_blank"> <img src="images/partner6.png"></a>
-                  </div>-->
-               </div>
-            </div>
-         </div>
-      </section>
-
+     
 
 
 
@@ -476,10 +220,10 @@ jQuery(function($) {
                   <h3>Quick Links</h3>
                   <ul id="menu-shook-footer" class="footer-menu">
                      <li id="menu-item-779" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-750 current_page_item menu-item-779"><a href="index.html" aria-current="page">Shook Home</a></li>
-                     <li id="menu-item-778" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-778"><a href="#events">Events</a></li>
+                     <li id="menu-item-778" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-778"><a href="index.html#events">Events</a></li>
                      <li id="menu-item-776" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-776"><a href="rules.html">Rules</a></li>
                      <li id="menu-item-829" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-829"><a href="https://shooktournaments.pixieset.com/" target="_blank">Media</a></li>
-                     <li id="menu-item-777" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-777"><a href="contact.html">Contact</a></li>
+                     <li id="menu-item-777" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-777"><a href="#">Contact</a></li>
                   </ul>
                </div>
                <div class="footer-section">
