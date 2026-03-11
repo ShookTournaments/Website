@@ -61,7 +61,7 @@ a {
 }
 
 a:hover {
-    color: var(--color-gold-dark);
+    color: bd8997;
     text-decoration: none;
 }
 
@@ -4537,7 +4537,7 @@ p.rule-description {
     }
 
     .gb-btn:hover {
-      background: #c4002f;
+      background: #FC0386;
       transform: translateY(-1px);
     }
 
