@@ -65,8 +65,7 @@ a:hover {
     text-decoration: none;
 }
 
-a:visited {
-    color: var(--color-gold-dark);
+a:visited {#fffvar(--color-gold-dark);
 }
 
 a:focus {
@@ -3489,6 +3488,17 @@ body.page-id-events .page-header {
         z-index: 1001;
     }
     
+
+.featured-events {
+    padding: 2rem 0;
+    background: var(--color-white);
+}
+
+#social{
+    Padding-bottom:0;
+}
+
+
     .logo-svg {
         height: 40px; /* Smaller logo on mobile */
     }
@@ -4399,3 +4409,192 @@ section.social-feed {
 p.rule-description {
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ── Game breaker sections ── */
+
+ 
+
+    /* ── Content: logo + buttons ── */
+    .gb-content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0;
+      padding: 48px 44px 48px 44px;
+      max-width: 440px;
+      display: none;
+    }
+
+    /* ── Logo ── */
+  .gb-logo {
+      margin-bottom: 36px;
+    }
+
+    .gb-logo-wordmark img {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+
+    .gb-logo-game {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: clamp(38px, 6vw, 60px);
+      color: #111111;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+    }
+
+    .gb-logo-br {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: clamp(38px, 6vw, 60px);
+      color: #e8003d;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+      position: relative;
+    }
+
+    /* Red underline accent under "BR" */
+    .gb-logo-br::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 100%;
+      height: 4px;
+      background: #e8003d;
+    }
+
+    .gb-logo-eaker {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: clamp(38px, 6vw, 60px);
+      color: #111111;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+    }
+
+    .gb-logo-reg {
+      font-size: 0.55em;
+      vertical-align: super;
+      color: #111;
+      font-weight: 700;
+    }
+
+    .gb-tagline {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600;
+      font-size: clamp(9px, 1.2vw, 12px);
+      color: #333;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 6px;
+    }
+
+    /* ── Buttons ── */
+    .gb-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .gb-btn {
+      display: inline-block;
+      background: #FC0386;
+      color: #ffffff;
+      font-family:var(--font-family);
+      font-weight: 800;
+      font-size: clamp(11px, 1.4vw, 14px);
+      letter-spacing: 2.5px;
+      
+      text-decoration: none;
+      padding: 16px 28px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.18s ease, transform 0.12s ease;
+      width: fit-content;
+      min-width: 240px;
+      text-align: center;
+    }
+
+    .gb-btn:hover {
+      background: #c4002f;
+      transform: translateY(-1px);
+    }
+
+    .gb-btn:active {
+      transform: translateY(0);
+    }
+
+/* ── RESPONSIVE: hide player on mobile ── */
+    @media (max-width: 750px) {
+      
+.gb-big{
+   display:none;
+}
+
+.gb-content {
+display: block;
+margin:0 auto;
+
+}
+
+
+
+
+    /* ── RESPONSIVE: hide player on mobile ── */
+    @media (max-width: 640px) {
+      
+.gb-big{
+   display:none;
+}
+
+.gb-content {
+display: block;
+
+}
+
+      .gb-banner {
+        min-height: unset;
+      }
+
+      .gb-player {
+        display: none;
+      }
+
+.gb-logo-wordmark img {
+        max-width: 90%;
+        margin: 0 auto;
+      }
+      .gb-content {
+        max-width: 100%;
+        padding: 36px 28px;
+      }
+
+      .gb-btn {
+        min-width: 100%;
+        width: 100%;
+        font-size: 1.1rem;
+      }
+
+
+    }
