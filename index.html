@@ -1,604 +1,1127 @@
 <!DOCTYPE html>
-<html lang="en-US">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="7v7 National Tour">
-      <title>Shook Tournaments</title>
-      <meta name='robots' content='max-image-preview:large' />
-     
-      <style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
-         img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
-         /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
-      </style>
-      <style id='wp-block-library-inline-css' type='text/css'>
-         :root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
-         /*# sourceURL=wp-block-library-inline-css */
-      </style>
-      <style id='global-styles-inline-css' type='text/css'>
-         :root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-         /*# sourceURL=global-styles-inline-css */
-      </style>
-      <style id='classic-theme-styles-inline-css' type='text/css'>
-         /*! This file is auto-generated */
-         .wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-         /*# sourceURL=/wp-includes/css/classic-themes.min.css */
-      </style>
-      
-      <link rel='stylesheet' id='google-fonts-css' href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&#038;display=swap' type='text/css' media='all' />
-      <link rel='stylesheet' id='shook-sports-style-css' href='css/1.css' type='text/css' media='all' />
-      <link rel='stylesheet' id='template-home-css' href='css/2.css' type='text/css' media='all' />
-      <link rel='stylesheet' id='shook-events-public-css' href='css/3.css' type='text/css' media='all' />
-      <script type="text/javascript" src="js/jquery.min.js" id="jquery-core-js"></script>
-      <script type="text/javascript" src="js/jquery-migrate.min.js" id="jquery-migrate-js"></script>
-      
-      
-      <link rel="canonical" href="https://www.shooktournaments.com/" />
-      <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-
-
-<script>
-jQuery(function($) {
-    var current = 0;
-    var slides = $('.hero-slide');
-    var total = slides.length;
-    setInterval(function() {
-        slides.eq(current).removeClass('active');
-        current = (current + 1) % total;
-        slides.eq(current).addClass('active');
-    }, 4000);
-});
-</script>
-
-
-
-<script src="https://static.elfsight.com/apps/instashow/stable/7ddd74df7ca4bbe49e6051e8181ec9ead18dee20/app/instashow.js" async="" charset="UTF-8"></script>
-
-
-
-   </head>
-   <body class="home wp-singular page-template page-template-template-home page-template-template-home-php page page-id-750 wp-embed-responsive wp-theme-shook-sports-theme home-page">
-      
-
-
-
-      <header class="header transparent">
-         <div class="nav-container">
-            <a href="index.html" class="logo">
-            <img src="images/ShookLogo.png" alt="shook Tournaments" class="logo-svg">
-            </a>
-            <nav class="main-navigation act">
-               <ul id="menu-shook-primary" class="nav-menu">
-                  <li id="menu-item-767" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-750 current_page_item menu-item-767"><a href="index.html" aria-current="page">Home</a></li>
-                  
-<li id="menu-item-767" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-750 current_page_item menu-item-767"><a href="https://shooktournaments.pixieset.com/" target="_blank" aria-current="page">Photos</a></li>
-
-
-                  <li id="menu-item-769" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-769"><a href="#events">Events</a></li>
-                  <li id="menu-item-770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-770"><a href="rules.html">Rules</a></li>
-                  <li id="menu-item-831" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-831"><a href="contest.html">Give-away Contest Rules</a></li>
-                  <li id="menu-item-768" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-768"><a href="contact.html">Contact</a></li>
-               </ul>
-            </nav>
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
-            <span> </span>
-            <span> </span>
-            <span> </span>
-            </button>
-
-
-<style type="text/css">
-   /* elfsight fix  */
-   .eapps-widget-toolbar{
-      display: none !important;
-   }
-
-
-</style>
-
-
-<script>
-jQuery(function($) {
-   /*Test
-   $(function() {
-    $('.mobile-menu-toggle').toggleClass('active');
-   
-});*/
-    // Toggle menu open/close
-    $('.mobile-menu-toggle').on('click', function() {
-        $(this).toggleClass('active');
-        $('.main-navigation').toggleClass('active');
-    });
-
-    // Close menu when a link is clicked
-    $('.main-navigation a').on('click', function() {
-        $('.mobile-menu-toggle').removeClass('active');
-        $('.main-navigation').removeClass('active');
-    });
-
-    // Close menu when clicking outside
-    $(document).on('click', function(e) {
-        if (!$(e.target).closest('.main-navigation, .mobile-menu-toggle').length) {
-            $('.mobile-menu-toggle').removeClass('active');
-            $('.main-navigation').removeClass('active');
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter Sargalski | Graphic & UX/UI Designer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-    });
-});
-</script>
 
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fafafa;
+        }
 
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+        }
 
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #777;
+        }
 
+        nav ul {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
 
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
 
+        nav a:hover {
+            color: #111;
+        }
 
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            padding: 4rem 5% 6rem;
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
 
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
 
+        .hero p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
 
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
 
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
 
-         </div>
-      </header>
+        /* About Section */
+        .about {
+            padding: 6rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #777;
+        }
 
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            gap: 4rem;
+            align-items: center;
+        }
 
+        .about-text p {
+            margin-bottom: 1.5rem;
+            color: #777;
+            font-size: 1.1rem;
+        }
 
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
 
-      <!-- Hero Section -->
-      <section class="hero" id="home">
-         <!-- Hero Background Slideshow -->
-         <div class="hero-slideshow">
-            <div class="hero-slide active" style="background-image: url('images/r1.jpg');"></div>
-            <div class="hero-slide " style="background-image: url('images/r2.jpg');"></div>
-            <div class="hero-slide " style="background-image: url('images/r3.jpg');"></div>
-            <div class="hero-slide " style="background-image: url('images/r4.jpg');"></div>
-            <div class="hero-slide " style="background-image: url('images/r5.jpg');"></div>
-         </div>
-         <div class="hero-overlay"></div>
-         <div class="hero-content">
-            <div class="hero-logo">
+        .skill-tag {
+            padding: 0rem 1.2rem;
+            background: #f0f0f0;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color:#888;
+        }
 
-               <img src="images/ShookLogo.webp" alt="Shook Tournaments" class="hero-logo-svg">
-            </div>
-             <a href="https://www.zortssports.com/season/index?orgId=128851" target="_blank" class="cta-button">
-                  Register Now                       
-               </a>
+         .skill-tag.major {
+            padding: 0rem 1.2rem;
+            background: #667eea;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color:#fff;
+        }
 
-               <a href="#events" 
-                  class="cta-button"
-                  >
-                  View Events                       
-               </a>
-         </div>
-      </section>
+        /* Portfolio Section */
+        .portfolio {
+            padding: 6rem 5%;
+            background: white;
+        }
 
+        .portfolio h2 {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            color:#777;
+        }
 
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
 
+        .portfolio-item {
+            background: #fafafa;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            
+        }
 
-<style>
-   
-.banner{
-   text-align: center;
-   width: 100%;
-   background-color: #444;
-   padding:20px;
-   color:white;
+        .portfolio-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .portfolio-info {
+            padding: 2rem;
+        }
+
+        .portfolio-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #777;
+        }
+
+        .portfolio-category {
+            color: #667eea;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .portfolio-info p {
+            color: #444;
+            line-height: 1.7;
+            margin-top: 30px;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 6rem 5%;
+            background: #111;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 1rem 2rem;
+            border: 2px solid white;
+            border-radius: 50px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .contact-link:hover {
+            background: white;
+            color: #111;
+        }
+
+        /* Footer */
+        footer {
+            padding: 2rem 5%;
+            background: #000;
+            color: white;
+            text-align: center;
+        }
+
+        
+        a.view {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px;
+    border: 2px solid #667eea;
+    border-radius: 50px;
+    color: #304996;
+    transition: all 0.3s ease;
+    float: right;  
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 3rem;
+    cursor: pointer;
+
+}
+a.view:hover {
+    background-color: #667eea;
+    color: white;
+}
+p::after{
+        content: "";
+    display: table;
+    clear: both;
 }
 
 
-</style>
 
-<section class="banner" id="home">
-        
-         <div class="banner-content">
-            <h1>Under New Ownership</h1>
-            <h3>Valuing our players, coaches and community. Operating with integrity!</h3>
-         </div>
-      </section>
-    
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
 
+            .about-content {
+                grid-template-columns: 1fr;
+            }
 
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
 
-
-
-
-
-
-
-
-
+            nav ul {
+                gap: 1rem;
+            }
+        }
 
 
 
+        /* Modal Styles */
 
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            animation: fadeIn 0.3s ease;
+        }
 
+        .modal.active {
+            display: block;
+        }
 
-<style type="text/css">
-   a.uevents{
-      max-width: 30%;
-      overflow:none;
-   }
+        .modal-content {
+            position: relative;
+            margin: 2% auto;
+            width: 90%;
+            height: 90%;
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
 
-</style>
-
-
-<section class="featured-events" id="events">
-         <div class="container">
-            <div class="section-header">
-               <h2>Events</h2>
-      
-            </div>
+        .modal p {
+            /* Text styles */
             
-
-
-
-
-<div class="events-grid">
-               
-
-
-<div class="event-card">
-                  <div class="event-image" style="background-image: url('images/event8.jpg');">
-                     Upcoming                        
-                  </div>
-                  <div class="event-content">
-                     <span class="event-date">April 11-12, 2026</span>
-                     <h3 class="event-title">Shook Nationals 7v7</h3>
-                     <p class="event-venue">Location TBA</p>
-                     <div class="event-actions">
-                        <a href="https://www.zortssports.com/season/index?orgId=128851" target="_blank" class="event-cta-btn interested-btn">Register Now!</a>
-                     </div>
-                  </div>
-               </div>
-
-
-
-               <div class="event-card">
-                  <div class="event-image" style="background-image: url('images/event1.jpg');">
-                     Upcoming                        
-                  </div>
-                  <div class="event-content">
-                     <span class="event-date">March 14-15, 2026</span>
-                     <h3 class="event-title">5v5 Flag Shook Tournament</h3>
-                     <p class="event-venue">Location TBA</p>
-                     <div class="event-actions">
-                        <a href="https://www.zortssports.com/season/index?orgId=128851" target="_blank" class="event-cta-btn interested-btn">Register Now!</a>
-                     </div>
-                  </div>
-               </div>
-               
-               <div class="event-card" >
-                  <div class="event-image" style="background-image: url('images/event7.jpg');">
-                     VCC                        
-                  </div>
-                  <div class="event-content">
-                     <span class="event-date">February 28 - March 1, 2026</span>
-                     <h3 class="event-title">Shook Tournament</h3>
-                     <!-- <p class="event-venue">Eldorado High School</p> -->
-                     <div class="event-actions">
-                        <a href="https://shooktournaments.pixieset.com/" target="_blank" class="event-cta-btn interested-btn">View Gallery!</a>
-                     </div>
-                  </div>
-
-               </div>
-
-               <div class="event-card" >
-                  <div class="event-image" style="background-image: url('images/event5.jpg');">
-                     VCC                        
-                  </div>
-                  <div class="event-content">
-                     <span class="event-date">February 14-15, 2026</span>
-                     <h3 class="event-title">Valentines Classic Championship</h3>
-                     <!-- <p class="event-venue">Butler High School</p> -->
-                     <div class="event-actions">
-                        <a href="https://shooktournaments.pixieset.com/" target="_blank" class="event-cta-btn interested-btn">View Gallery!</a>
-                     </div>
-                  </div>
-
-               </div>
-               
-
-               <div class="event-card" >
-                  <div class="event-image" style="background-image: url('images/event3.jpg');">
-                     Shook Opener                      
-                  </div>
-                  <div class="event-content">
-                     <span class="event-date">January 31 - Febraury 1, 2026</span>
-                     <h3 class="event-title">Shook Opener</h3>
-                     <!--<p class="event-venue">Butler High School</p>-->
-                     <div class="event-actions">
-                        <a href="https://primeactionimage.zenfolio.com/p481921096" target="_blank" class="event-cta-btn interested-btn">View Gallery!</a>
-                     </div>
-                  </div>
-               
-</div>
-               <!--<div class="event-card" >
-                  <div class="event-image" style="background-image: url('images/event6.jpg');">
-                     HOUSTON                        
-                  </div>
-                  <div class="event-content">
-                     <span class="event-date">April 28-1, 2026 </span>
-                     <h3 class="event-title">Shook Tournament</h3>
-                     <p class="event-venue">Butler High School</p>
-                     <div class="event-actions">
-                        <a href="https://www.zortssports.com/season/index?orgId=128851" target="_blank" class="event-cta-btn interested-btn">View Gallery!</a>
-                     </div>
-                  </div>
-               </div>
-               
-
-               <div class="event-card" >
-                  <div class="event-image" style="background-image: url('images/event1.jpg');">
-                     HOUSTON                        
-                  </div>
-                  <div class="event-content">
-                     <span class="event-date">April 28-1, 2026</span>
-                     <h3 class="event-title">Shook Tournament</h3>
-                     <p class="event-venue">Butler High School</p>
-                     <div class="event-actions">
-                        <a href="https://www.zortssports.com/season/index?orgId=128851" target="_blank" class="event-cta-btn interested-btn">View Gallery!</a>
-                     </div>
-                  </div>
-
-               </div>-->
-
-
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-         </div>
-      </section>
-
-
-<!--
-<section class="featured-events" id="rankings">
-         <div class="container">
-            <div class="section-header">
-               <h2>Shook Rankings</h2>
-      Another social media account for rankings only
-
-            </div>
+            line-height: 1.6;          /* 1.5-1.8 is typical for readability */
+            font-family: Arial, sans-serif;
+            font-weight: 400;          /* normal weight */
+            color: #333;               /* dark gray for body text */
             
-         </div>
-      </section>
-
--->
-<style>
-   .featured-events{
-      max-width: 100%;
-   }
-
-</style>
-
-
-
-
-      <section class="featured-events" id="social">
-         <div class="container">
-            <div class="section-header">
-               <h2>Rankings and More</h2>
-      
-
-
-
-
-
-<!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
-<script src="https://elfsightcdn.com/platform.js" async></script>
-<div class="elfsight-app-416dab01-e6e1-4d0a-b961-1c11da4a7140" data-elfsight-app-lazy></div>
-
-
-            </div>
+            /* Spacing */
+            margin-bottom: 1em;        /* space between paragraphs */
+            margin-top: 0;             /* remove top margin */
             
-         </div>
-      </section>
-      
-      
-<!--
-<section class="sponsors-section" id="events">
-         <div class="container">
-            <div class="sponsors-content">
-               <h2 class="sponsors-title">Events</h2>
-               <p class="cal">
+            /* Text formatting */
+            text-align: left;          /* or justify, center, right */
+            letter-spacing: 0.5px;     /* subtle letter spacing */
+            word-spacing: 2px;         /* space between words */
+            
+            /* Width and layout */
+            max-width: 65ch;           /* optimal reading width (characters) */
+            
+            /* Advanced */
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .modal-image {
+            flex: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .modal-text {
+            flex: 1;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            overflow-y: auto;
+            max-height: 100%;
+        }
+
+        .modal-text h2 {
+            margin-top: 0;
+            color: #667eea;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 1001;
+            transition: color 0.3s ease;
+        }
+
+        .close:hover {
+            color: #667eea;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .modal-content {
+                flex-direction: column;
+                overflow-y: auto;
+            }
+            
+            .modal-image {
+                flex: none;
+                height: 50%;
+            }
+            
+            .modal-text {
+                flex: none;
+            }
+        }
 
 
-              <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FLos_Angeles&showPrint=0&showTabs=0&src=c2hvb2t0b3VybmFtZW50c0BnbWFpbC5jb20&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039be5&color=%230b8043" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe></p>
-               <div class="sponsors-grid">
-                  
-               </div>
+/* carousel */
+.carousel-container {
+            position: relative;
+            /*max-width: 800px;*/
+            width: 100%;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .carousel-slide {
+            display: none;
+            width: 100%;
+        }
+
+        .carousel-slide.active {
+            display: block;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 600px;
+            object-fit: contain;
+            display: block;
+        }
+
+        .carousel-caption {
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .carousel-caption h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+
+        .carousel-caption p {
+            margin: 0;
+            color: #666;
+            max-width: 100%;
+        }
+
+        /* Navigation buttons */
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            font-size: 24px;
+            padding: 15px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            z-index: 10;
+        }
+
+        .carousel-btn:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .carousel-btn.prev {
+            left: 0;
+        }
+
+        .carousel-btn.next {
+            right: 0;
+        }
+
+        /* Dots/indicators */
+        .carousel-dots {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .dot.active {
+            background-color: #667eea;
+        }
+
+        .dot:hover {
+            background-color: #999;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Peter Sargalski</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>UX/UI Designer & Leader</h1>
+        <p>Creating beautiful, functional designs that merge creativity with user-centered thinking</p>
+        <a href="#portfolio" class="cta-button">View My Work</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+            
+                <p>Curiosity and passion drive everything I do. After earning a design degree, my curiosity led me to learn HTML and CSS so I could turn my designs into working websites. Continuing down this path I learned javascript and PHP. Though it was some time ago, it gave me valuable perspective on how UX/UI integrates into development cycles, especially in software development. My passions are UX/UI, AI and design!</p>
+                <div class="skills">
+                    <span class="skill-tag major">20 years in tech</span>
+                    <span class="skill-tag major">23 designing</span>
+                    <span class="skill-tag major">11 leading teams</span>
+                   
+                </div>
+
             </div>
-         </div>
-      </section>
--->
 
+<div class="about-image">
+                    <img src="images/me1.png" width="200px" alt="Boston Cognitive Application">
+                </div>          
+        </div>
+    </section>
 
-
-
-<section class="gb-big">
-         <div class="container">
-            <div class="cta-content">
-              <a href="https://uniforms.gamebreaker.com?ref=mje2nze" target="_blank"><img src="images/gamebreaker.jpg"> </a>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>Selected Work</h2>
+        <div class="portfolio-grid">
+            
+            <!-- Portfolio Item 2 -->
+            <div class="portfolio-item">
+                <img src="images/sd1.png" alt="Six Dots">
+                <div class="portfolio-info">
+                    <div class="portfolio-category">Product Design</div>
+                    <h3>Six Dots</h3>
+                    <div class="skills">
+                    <span class="skill-tag">Design System</span>
+                    <span class="skill-tag">UX/UI Design</span>
+                    <span class="skill-tag">User Research</span>
+                    <span class="skill-tag">White Label</span>
+                    <span class="skill-tag">Leadership (team of 4)</span>
+                   
+                </div>
+                    
+                    <p>No-cost ordering platform that empowers restaurants and bars to offer a seamless, contactless experience for dine-in, delivery, and takeout.
+                        <a class="view" onclick="openModal('project2')">
+                            <span>View Project &#8680;</span>
+                        </a>
+                    </p>
+                 
+                </div>
             </div>
-         </div>
-      </section>
 
-<!-- styles for banner-->
-<style type="text/css">
+            <!-- Portfolio Item 3 -->
+            <div class="portfolio-item">
+                <img src="images/op1.avif" alt="Six Dots">
+                <div class="portfolio-info">
+                    <div class="portfolio-category">Product Design</div>
+                    <h3>Overproof</h3>
+                    <div class="skills">
+                    <span class="skill-tag">Design System</span>
+                    <span class="skill-tag">Data Visualization</span>
+                    <span class="skill-tag">UX/UI Design</span>
+                    <span class="skill-tag">User Research</span>
+                    <span class="skill-tag">Product Launch</span>
+                    <span class="skill-tag">Leadership (team of 4)</span>
+                    <span class="skill-tag">Investor Decks</span>
+                   
+                </div>
+                    <p>Overproof is an enterprise software suite for the beverage industry that leverages AI and uses data-powered insights to drive business growth. 
 
-   
-  </style>
+                        <a class="view" onclick="openModal('project3')">
+                            <span>View Project &#8680;</span>
+                        </a>
+                    </p>
+                 
+                </div>
+            </div>
+<!-- Portfolio Item 1 -->
+            <div class="portfolio-item">
+                <img src="images/bo1.png" alt="Boston Cognitive Applicaton">
+                <div class="portfolio-info">
+                    <div class="portfolio-category">Product Design</div>
+                    <h3>BoCA Application</h3>
+                    <div class="skills">
+                    <span class="skill-tag">UX/UI Design</span>
+                    <span class="skill-tag">Marketing Assets</span>
+                    <span class="skill-tag">Product Launch</span>
+                   
+                </div>
+                    <p>A self-administered digital cognitive assessment for healthcare providers, researchers, and individuals. This was designed from concept through deployment to the App Store.
+                        <a class="view" onclick="openModal('project1')">
+                            <span>View Project &#8680;</span>
+                        </a>
+                    </p>
+                    
+                </div>
+            </div>
 
-<section class="">
-<div class="gb-banner">
+            <!-- Portfolio Item 4 -->
+            <div class="portfolio-item">
+                <img src="images/bt4.avif   " alt="Boats Group Data Visualization">
+                <div class="portfolio-info">
+                    <div class="portfolio-category">Data Visualization</div>
+                    <h3>Reporting Suite</h3>
+                    <div class="skills">
+                    <span class="skill-tag">Product Launch</span>
+                    <span class="skill-tag">Data Visualization</span>
+                    <span class="skill-tag">Leadership (team of 5)</span>
+                   
+                </div>
+                    <p>Analytics platform that provides insights into consumer behavior across marine marketplaces, supporting data-driven decisions in marketing and distribution.
+                    <a class="view" onclick="openModal('project4')">
+                            <span>View Project &#8680;</span>
+                        </a>
 
-    <!-- Background player image (hidden on mobile) -->
-    <div class="gb-player" aria-hidden="true"></div>
+                    </p>
+                    
+                </div>
+            </div>
 
-<!-- Main content -->
-    <div class="gb-content">
+            <!-- Portfolio Item 5 -->
+            <div class="portfolio-item">
+                <img src="images/bt1.png" alt="Boat Trader">
+                <div class="portfolio-info">
+                    <div class="portfolio-category">A/B Testing</div>
+                    <h3>Boat Trader</h3>
+                    <div class="skills">
+                        <span class="skill-tag">A/B Testing</span>
+                        <span class="skill-tag">UI Design</span>
+                        <span class="skill-tag">Leadership (team of 5)</span>
+                   </div>
+                    <p>Extensive A/B testing on BoatTrader.com lead to UI changes that significantly increased traffic and revenue.</p>
+                    
 
-      <div class="gb-logo">
-        <div class="gb-logo-wordmark">
-          <img src="images/gb.jpg">
+                </div>
+            </div>
+
+            <!-- Portfolio Item 6 -->
+            <div class="portfolio-item">
+                <img src="images/klx1.png" alt="KLX Design System">
+                <div class="portfolio-info">
+                    <div class="portfolio-category">UX/UI Design</div>
+                    <h3>KLX Design System</h3>
+                    <div class="skills">
+                        <span class="skill-tag">Design System</span>
+                        <span class="skill-tag">UX/UI Design</span>
+                        <span class="skill-tag">Investor Decks</span>
+                   </div>
+                    <p>Complete overhaul of KLX's e-commerce design system. KLX was the global leader in aerospace parts, later bought by Boeing.</p>
+                    
+
+
+                </div>
+            </div>
+
+            <!-- Portfolio Item 7 -->
+                        <div class="portfolio-item">
+                <img src="images/vd4.png" alt="Other Projects">
+                <div class="portfolio-info">
+                    <div class="portfolio-category">Visual Design</div>
+                    <h3>Other Projects</h3>
+                    
+<div class="skills">
+                        <span class="skill-tag">Visual Design</span>
+                        <span class="skill-tag">Furniture Design</span>
+                        <span class="skill-tag">Landscape lighting Design</span>
+                        <span class="skill-tag">Interior Design</span>
+                   </div>
+
+
+
+                    <p>Other fun designs. 
+                        <div><a class="view" href="otherprojects.html">
+                            View Projects &#8680;
+                            
+                        </a></div>
+                    </p>
+                    
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Let's Work Together</h2>
+        <p>Interested in collaborating? I'd love to hear from you.</p>
+        <div class="contact-links">
+            <a href="mailto:petersargalski@gmail.com" class="contact-link">Email Me</a>
+            <a href="https://www.linkedin.com/in/peter-sargalski-4929248/" target="_blank" class="contact-link">LinkedIn</a>
+            <a href="images/PeterSargalski-ResumeL.pdf" target="_blank" class="contact-link">Resume</a>
+          
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Peter Sargalski. All rights reserved.</p>
+    </footer>
+
+
+
+
+
+<!-- Project 1 Modal -->
+    <div id="project1" class="modal">
+        <span class="close" onclick="closeModal('project1')">&times;</span>
+        <div class="modal-content">
+            <div class="modal-image">
+                
+            <img src="images/bo2.png" alt="Image 1">
+            
+        </div>
+
+            <div class="modal-text">
+                <h2>BoCA Application Product Design
+                </h2>
+               <div class="skills">
+                    <span class="skill-tag">UX/UI Design</span>
+                    <span class="skill-tag">Marketing Assets</span>
+                   <span class="skill-tag">Product Launch</span>
+                </div>
+                <br>
+                <p>Boston Cognitive is a digital healthcare platform company that provides advanced cognitive assessment and management tools for healthcare providers to screen, measure, and manage cognitive function. As the product designer I've been tasked with bringing these clinical quality products to the regular consumer. 
+                </p>
+
+                <p>
+                    The BoCA Application allows anyone who is concerned about cognitive decline to evaluate their health and view their scores against a similar age and gender demographic. 
+                </p>
+
+                <p>
+                    This project involved designing the application from start to finish including the established Boston Cognitive design language and careful consideration to this particular audience demographic. The clinically validated test already existed and this project was to wrap the test in an easy experience for the average non clinician. 
+                </p>
+
+                
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- Project 2 Modal -->
+    <div id="project2" class="modal">
+        <span class="close" onclick="closeModal('project2')">&times;</span>
+        <div class="modal-content">
+            <div class="modal-image">
+                
+<!-- carousel start -->
+
+                <div class="carousel-container">
+        <div class="carousel-slide active">
+            <img src="images/sd4.avif" alt="Project 1">
+            <div class="carousel-caption">
+                <h3>Six Dots PWA</h3>
+                <p>During COVID as dining-in resumed, there was no contactless solution that would integrate menus, payment, bill splitting. Users could sit at their favorite restaurant, scan a QR code and start ordering without any additional interaction. In addition the user could pay and split their bill from the PWA</p>
+            </div>
+        </div>
+        <div class="carousel-slide">
+            <img src="images/sd6.png" alt="Project 2">
+            <div class="carousel-caption">
+                <h3>User Flow</h3>
+                <p>Since this concept of contactless dine-in was new, the user flow and experience needed to be simple, easy and intuitive. My team took a lot of pride in making this easy to use the first time a user tried it. </p>
+            
+            </div>
+        </div>
+        <div class="carousel-slide">
+            <img src="images/sd7.png" alt="Project 3">
+            <div class="carousel-caption">
+                <h3>Design System</h3>
+                <p>With such an aggressive timeline, organization was critical to move fast as a design team while making implementation effortless for developers. </p>
+            </div>
+        </div>
+         <div class="carousel-slide">
+            <img src="images/sd5.webp" alt="Project 3">
+            <div class="carousel-caption">
+                <h3>Merchant Tools</h3>
+                <p>The biggest challenge was giving merchants an easy flow to connect POS and menu items to the user facing web app. We leveraged overproof's (parent company) extensive menu data to import items and allow the merchant a simple way to review and approve client facing menu items. </p>
+            </div>
+        </div>
+
+       
+        <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+<!-- carousel end-->
+
+            </div>
+            <div class="modal-text">
+                <h2>Six Dots: Consumer PWA</h2>
+                <div class="skills">
+                    <span class="skill-tag">Design System</span>
+                    <span class="skill-tag">UX/UI Design</span>
+                    <span class="skill-tag">User Research</span>
+                    <span class="skill-tag">White Label</span>
+                    <span class="skill-tag">Leadership (team of 4)</span>
+                   
+                </div><br>
+                <p>We built Sixdots during COVID: a fee-free ordering platform leveraging Overproof's menu data and partnerships to enable contactless in-house dining for restaurants and bars without typical app fees.
+                </p>
+
+                <p>
+                    I led a 4-person design team from logo to launch in 3 months, coordinating cross-functional efforts across development, product, marketing, and sales. Oversaw end-to-end design, from research and architecture to high-fidelity mockups and interactive prototypes, while managing handoffs and supporting simultaneous build-and-sell operations for both user and merchant platforms.
+                </p>
+
+                <p>
+                    
+                    A failed partnership forced us to build POS integrations from scratch on an aggressive timeline. The market was oversaturated with delivery apps consumers didn't want to download, and while takeout services were established, dine-in tech experiences were clumsy. 
+                </p>
+                <p>
+Our goal was to build a modular, scalable design system adaptable to various restaurant formats and white-label use. Prioritize seamless contactless dine-in ordering that complemented staff interactions while matching competitor delivery and takeout features. Minimize merchant friction and technical complexity.
+
+Launched as a progressive web app eliminating downloads, we built a modular, scalable design system for a contactless ordering platform adaptable to various restaurant formats and white-label use. Prioritizing a seamless dine-in experience that complemented staff interactions, we matched competitor delivery and takeout features. Using Material UI, it delivered a familiar interface with intuitive flows for ordering, bill splitting, and payment. The system integrated multiple POS and payment providers and transformed the merchant portal from a builder into a simple review tool.
+                </p>
+
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+<!-- Project 3 Modal -->
+    <div id="project3" class="modal">
+        <span class="close" onclick="closeModal('project3')">&times;</span>
+        <div class="modal-content">
+            <div class="modal-image">
+                
+<!-- carousel start -->
+
+                <div class="carousel-container">
+        <div class="carousel-slide active">
+            <img src="images/op2.webp" alt="Project 1">
+            <div class="carousel-caption">
+                <h3>Overproof</h3>
+                <p>With a powerful desktop software suite, users could leverage AI-driven insights accessible in the field to ensure locations aligned with their goals.</p>
+            </div>
+        </div>
+        <div class="carousel-slide">
+            <img src="images/op6.png" alt="Project 2">
+            <div class="carousel-caption">
+                <h3>Design Architecture</h3>
+                <p>With such a large project, organization was essential for both designers and hand-offs to the dev teams. While tickets and briefs are great to understand what a feature will do, a design architecture was essential for all to understand where a feature fit and it's relationships with other features and flows.   </p>
+            
+            </div>
+        </div>
+        <div class="carousel-slide">
+            <img src="images/op7.png" alt="Project 3">
+            <div class="carousel-caption">
+                <h3>Design System</h3>
+                <p>This was the first project that I got to create from idea to realease. It was essential to catalogue and curate a detailed design system to keep consistency in all elements of the UI.    </p>
+            </div>
+        </div>
+       
+
+       
+        <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            
+        </div>
+    </div>
+<!-- carousel end-->
+
+            </div>
+            <div class="modal-text">
+                <h2>Overproof Software Suite</h2>
+                <div class="skills">
+                    <span class="skill-tag">Design System</span>
+                    <span class="skill-tag">Data Visualization</span>
+                    <span class="skill-tag">UX/UI Design</span>
+                    <span class="skill-tag">User Research</span>
+                    <span class="skill-tag">Product Launch</span>
+                    <span class="skill-tag">Leadership (team of 4)</span>
+                    <span class="skill-tag">Investor Decks</span>
+                   
+                </div><br>
+                <p>Overproof is an enterprise software for the beverage industry that uses data-powered insights to drive business growth. Launched in 2020, it initially provided field teams with data collection and basic CRM functions through a desktop portal and mobile app. By 2023, the data set had expanded significantly, offering deeper insights into accounts and market trends nationwide. Leveraging AI, Overproof evolved into a smarter field operations assistant, providing actionable insights, suggestions, and enhanced operational tools for brand ambassadors, sales reps, and managers.
+                </p>
+
+                <p>
+                    As the Design Director for Overproof, I took a comprehensive approach to guiding our research and design strategy, ensuring we had a comprehensive understanding of what needed to evolve. I oversaw cross-functional collaboration with marketing, sales, development, customer success teams, and customers to identify gaps between what was being promised, sold, and actually used. From the initial discovery phase through launch and post-release improvements, I led and supported a focused four-person design team, ensuring that our work aligned with both user needs and business goals.
+                </p>
+
+<p>Our goal was to empower field teams with insights and planning tools that boost daily efficiency. We aimed to deliver strategic market intelligence that helped both managers and field users understand broader trends and how their work contributed to larger objectives. By leveraging ai-driven personalized recommendations, we sought to enhance decision-making and help field teams achieve their goals more effectively.</p>
+
+                <p>
+                    The Insights page now delivers real-time trends and venue intelligence, scaling with subscription tiers and supporting data-driven strategy. We introduced a daily planner with AI-generated task suggestions and route optimization that reduces planning friction, allowing field teams to focus on goal-advancing activities and significantly boosting productivity. The Goals page transformed goal tracking through integrated account segmentation, history, and ai-recommended accounts, giving teams clearer progress visibility and stronger accountability. Enhanced CRM features with richer account profiles, notes, contacts, and history deepened customer insights while improving cross-team collaboration. A new design system elevated visual consistency and usability across the platform. These improvements drove a 32% increase in existing user engagement and reduced post-onboarding customer support tickets by 24%.
+                </p>
+
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+<!-- Project 4 Modal -->
+    <div id="project4" class="modal">
+        <span class="close" onclick="closeModal('project4')">&times;</span>
+        <div class="modal-content">
+            <div class="modal-image">
+                
+<!-- carousel start -->
+
+                <div class="carousel-container">
+        <div class="carousel-slide active">
+            <img src="images/bt2.avif" alt="Project 1">
+            <div class="carousel-caption">
+                <h3>Reporting</h3>
+                <p>Boats group has so many offerings in different code bases. Before this project, OEM users were limited to piecing together information from different sites. This project produced a unified reporting suite that aggregates data into a single dashboard.  </p>
+            </div>
+        </div>
+        <div class="carousel-slide">
+            <img src="images/bt3.webp" alt="Project 2">
+            <div class="carousel-caption">
+                <h3>Design Architecture</h3>
+                <p>Third-party tools like Tableau and Power BI come with limitations. We designed a minimal, intuitive system within  Tableau’s constraints.  </p>
+            
+            </div>
         </div>
         
+       
 
-      </div>
-
-      <div class="gb-buttons">
-        <a href="https://uniforms.gamebreaker.com?ref=mje2nze" target="_blank" class="gb-btn">Order Required Headgear</a>
-        <a href="https://uniforms.gamebreaker.com?ref=mje2nze" target="_blank" class="gb-btn">Order Custom Uniforms</a>
-      </div>
-
+       
+        <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            
+            
+        </div>
     </div>
-  </div>
+<!-- carousel end-->
 
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!-- CTA Section -->
-      <section class="cta-section">
-         <div class="container">
-            <div class="cta-content">
-               <h2>Coaches Corner</h2>
-               <p>Submit your team for Shook Tournaments</p>
-               
-                  <a href="https://www.zortssports.com/season/index?orgId=128851" class="cta-button" target="_blank">
-                  Register Now                       
-               </a>
-               <a href="contact.html" 
-                  class="cta-button"
-                  >
-                  Questions                        
-               </a>
-               <a href="rules.html" 
-                  class="cta-button"
-                  >
-               Rule Book                       </a>
             </div>
-         </div>
-      </section>
-      
-      <style type="text/css">
-      
-         .sponsor-item img{
-            width: 300px;
-         }
+            <div class="modal-text">
+                <h2>Boats Group OEM Reporting Suite:</h2>
+                <div class="skills">
+                    <span class="skill-tag">Product Launch</span>
+                    <span class="skill-tag">Data Visualization</span>
+                    <span class="skill-tag">Leadership (team of 5)</span>
+                   
+                </div><br>
+                <p>For nearly 30 years, Boats Group has led the marine marketplace industry, reaching 22 million monthly users across 11 brands. In 2019, my team worked closely with the VP of Product to launch a new data offering for OEMs (original equipment manufacturers), aimed at unlocking insights into consumer behavior across all platforms. Prior to this, OEM revenue was limited to ad placements, and data was siloed within individual platforms. Seeing the untapped potential of our consumer data, we developed a reporting tool that enabled OEMs to better understand market dynamics, optimize distribution, and make more strategic marketing investments.
+                </p>
 
+                <p>
+                    My team collaborated with the Head of BI, VP of Sales, Account Management, and Development to take the OEM Reporting Suite from concept to launch in just two months.
 
-      </style>
+Key challenges included managing a high-cost data project with tight constraints, navigating complex and voluminous data to surface only the most valuable insights, and ensuring reliability and consistency to build trust with OEMs through accurate, validated data.
+                </p>
 
+<p>Through visualization work and user testing, we identified the most valuable data came from three key portals: Yachtworld, Boat Trader, and Boats.com. Focusing exclusively on these sources simplified our quality checking process and delivered more confident results. Based on our Tableau proof of concept, we developed a scalable component library that kept us future proof because it enabled easy addition of new data categories. The resulting dashboards provided rich visualizations for impressions, views, connections, and leads with flexible filtering by portal, date, brand, and model. We balanced high-level trend analysis with drill-down capabilities so executives could identify patterns while analysts accessed granular data.</p>
 
-<section class="sponsors-section">
-         <div class="container">
-            <div class="sponsors-content">
-               <h2 class="sponsors-title">Partners</h2>
-               <p class="sponsors-subtitle">Partnering with our community</p>
-               <div class="sponsors-grid">
-                  <div class="sponsor-item">
-                     <a href="https://www.hendersonflag.com/" target="_blank"> <img src="images/partner3.png"></a>
-                  </div>
-                  
+                
 
-
-                  <div class="sponsor-item">
-                     <a href="https://www.ebyirondesigns.com" target="_blank"> <img src="images/partner1.png"></a>
-                  </div>
-                  <div class="sponsor-item">
-                     <a href="https://vegassportsandapparel.com/" target="_blank"> <img src="images/partner2.png"></a>
-                  </div>
-                  
-                  <div class="sponsor-item">
-                     <a href="https://www.trophyfactorylv.com/" target="_blank"> <img src="images/partner4.png"></a>
-                  </div>
-                  <div class="sponsor-item">
-                     <a href="https://recruitvegas.com/" target="_blank"> <img src="images/partner5.png"></a>
-                  </div>
-                  <!--<div class="sponsor-item">
-                     <a href="#" target="_blank"> <img src="images/partner6.png"></a>
-                  </div>-->
-               </div>
+                
             </div>
-         </div>
-      </section>
+        </div>
+    </div>
 
 
 
 
-      <footer class="footer">
-         <div class="container">
-            <div class="footer-content">
-               <div class="footer-section">
-                  <div class="footer-logo">
-                     <img src="images/ShookLogo.webp" alt="shook 7v7" class="footer-logo-svg">
-                  </div>
-                  <p>Under new and better ownership. We value our players, coaches, viewers, sponsors and community.</p>
-               </div>
-               <div class="footer-section">
-                  <h3>Quick Links</h3>
-                  <ul id="menu-shook-footer" class="footer-menu">
-                     <li id="menu-item-779" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-750 current_page_item menu-item-779"><a href="index.html" aria-current="page">Shook Home</a></li>
-                     <li id="menu-item-778" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-778"><a href="#events">Events</a></li>
-                     <li id="menu-item-776" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-776"><a href="rules.html">Rules</a></li>
-                     <li id="menu-item-829" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-829"><a href="https://shooktournaments.pixieset.com/" target="_blank">Media</a></li>
-                     <li id="menu-item-777" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-777"><a href="contact.html">Contact</a></li>
-                  </ul>
-               </div>
-               <div class="footer-section">
-                  <h3>Follow shook</h3>
-                  <p>Highlights, team spotlights, and community</p>
-                  <div class="social-links">
-                     <a href="https://www.instagram.com/shookv7/" title="shook on Instagram" aria-label="Follow shook on Instagram" target="_blank" rel="noopener" class="social-icon instagram-icon">
-                        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
-                           <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                        </svg>
-                     </a>
-                     <a href="https://www.tiktok.com/@shook7v7tournaments?lang=en" title="shook on TikTok" aria-label="Follow shook on TikTok" target="_blank" rel="noopener" class="social-icon tiktok-icon">
-                        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
-                           <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-.88-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
-                        </svg>
-                     </a>
-                     
-                  </div>
-               </div>
-            </div>
-            <div class="footer-bottom">
-               <div class="footer-bottom-content">
-                  <img src="images/ShookLogo.webp" alt="shook 7v7" class="footer-bottom-logo">
-                  <p>&copy; 2026 Shook Tournaments. All rights reserved.</p>
-               </div>
-            </div>
-         </div>
-      </footer>
-      
-     
-      
-      
-   </body>
+
+    <script>
+//Modal
+        function openModal(projectId) {
+            const modal = document.getElementById(projectId);
+            if (modal) {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeModal(projectId) {
+            const modal = document.getElementById(projectId);
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Close modal when clicking outside the content
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const activeModal = document.querySelector('.modal.active');
+                if (activeModal) {
+                    activeModal.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+            }
+        });
+
+
+        // Carousel
+       
+        document.querySelectorAll('.carousel-container').forEach((carousel, carouselIndex) => {
+            let currentSlide = 0;
+            const slides = carousel.querySelectorAll('.carousel-slide');
+            const dots = carousel.querySelectorAll('.dot');
+            const prevBtn = carousel.querySelector('.carousel-prev');
+            const nextBtn = carousel.querySelector('.carousel-next');
+
+            function showSlide(n) {
+                if (n >= slides.length) {
+                    currentSlide = 0;
+                } else if (n < 0) {
+                    currentSlide = slides.length - 1;
+                } else {
+                    currentSlide = n;
+                }
+
+                slides.forEach(slide => {
+                    slide.classList.remove('active');
+                });
+
+                dots.forEach(dot => {
+                    dot.classList.remove('active');
+                });
+
+                slides[currentSlide].classList.add('active');
+                dots[currentSlide].classList.add('active');
+            }
+
+            function changeSlide(direction) {
+                showSlide(currentSlide + direction);
+            }
+
+            function goToSlide(n) {
+                showSlide(n);
+            }
+
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => changeSlide(-1));
+            }
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => changeSlide(1));
+            }
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => goToSlide(index));
+            });
+
+            showSlide(0);
+        });
+    </script>
+
+
+
+
+
+
+</body>
 </html>
